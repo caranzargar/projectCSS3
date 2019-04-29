@@ -1,0 +1,61 @@
+/*Fuente a Utilizar*/
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('DancingScript-Bold.ttf');
+}
+body{
+  margin: 2%;
+  width: 90%;
+  background-color: #02010A;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1em;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+.cabecera{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+   padding: 1% 2%;
+  width: 100%;
+  background-color: #5b7989;
+}
+header h1{
+  color: white;
+  text-align: left;
+  text-transform: capitalize;
+  width: 400px;
+}
+header h1:not(selector){
+  color: white;
+  text-shadow: 2px 2px #02010A;
+}
+nav{
+  display: inline-block;
+  float: right;
+}
+nav ul a{
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  background-color: #5b7989;
+}
+.contenedor1{
+ padding: 1% 2%;
+ width: 100%;
+ background: #82C3A6;
+}
+.contenedor1 img{
+  width: 50%;
+  box-shadow: 2px 2px #02010a;
+  margin: auto;
+  display: block;
+}
+.contenedor2{
+ padding: 1% 2%;
+ width: 100%;
+ background: #d5c75f;
+}
+.contenedor2 img{
+  width: 50%;
+  box-shadow: 2px 2px #02010a;
+}
