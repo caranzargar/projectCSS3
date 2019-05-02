@@ -4,18 +4,23 @@
   src: url('DancingScript-Bold.ttf');
 }
 body{
-  margin: 2%;
-  width: 90%;
+  margin: 2px 2.5% 2.5% 10px;
+  width: 95%;
   background-color: #02010A;
   font-family: 'Dancing Script', cursive;
   font-size: 1em;
   font-variant: small-caps;
   font-weight: bold;
 }
+.contenido{
+  margin: auto;
+  display: block;
+  width: 900px;
+}
 .cabecera{
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-   padding: 1% 2%;
+  padding: 1% 2%;
   width: 100%;
   background-color: #5b7989;
 }
@@ -23,39 +28,92 @@ header h1{
   color: white;
   text-align: left;
   text-transform: capitalize;
-  width: 400px;
+   height: 90%;
+   width: 50%;
+   display: inline;
 }
 header h1:not(selector){
   color: white;
   text-shadow: 2px 2px #02010A;
 }
-nav{
-  display: inline-block;
+header nav{
+  height: 90%;
   float: right;
+  padding: 0.5% 2% 0 0;
+  display: inline;
 }
-nav ul a{
+.nav1 a{
   text-decoration: none;
-  list-style: none;
+  list-style-type: none;
   color: white;
   background-color: #5b7989;
 }
+/* sectiom contenedor1 */
 .contenedor1{
  padding: 1% 2%;
  width: 100%;
  background: #82C3A6;
+ clear: both;
 }
 .contenedor1 img{
-  width: 50%;
+  width: 90%;
   box-shadow: 2px 2px #02010a;
   margin: auto;
   display: block;
 }
+/* section contenedor2*/
 .contenedor2{
  padding: 1% 2%;
  width: 100%;
  background: #d5c75f;
+
+ display: flex;
+ flex-direction: row;
 }
-.contenedor2 img{
+.contenedor2 figure{
   width: 50%;
-  box-shadow: 2px 2px #02010a;
+  margin: auto;
 }
+.contenedor2 figure figcaption{
+  margin: 1% 2%;
+  text-align: center;
+  text-decoration: underline;
+}
+/* IMAGEN 1*/
+.contenedor2 .art1 img{
+  margin: 0 5%;
+  border: 1px;
+  width: 90%;
+  box-shadow: 2px 2px #02010a;
+  transition: transform 1s;
+  display: block;
+}
+.contenedor2 .art1 img:hover{
+ transform: rotateZ(10deg);
+ box-shadow: 2px 2px #82C3A6;
+}
+/* IMAGEN 2*/
+.contenedor2 .art2 img{
+  margin: 0 5%;
+  border: 1px;
+  width: 90%;
+  box-shadow: 2px 2px #02010a;
+  transition: transform 1s;
+  display: block;
+}
+.contenedor2 .art2 img:hover{
+  transform: translate(20px, -5px);
+  box-shadow: 2px 2px #82C3A6;
+}
+
+
+
+/*@keyframes animacion1 {
+  transition-property: transform: rotateZ(10deg);
+  transition-duration: 1s;
+}
+
+
+/*@media (width:900px) and (max-width:) {
+
+}*/
