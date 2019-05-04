@@ -1,0 +1,269 @@
+/*Fuente a Utilizar*/
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('DancingScript-Bold.ttf');
+}
+/*AJUSTES GENERALES*/
+body{
+  margin: 2px 2.5% 2.5% 10px;
+  width: 95%;
+  background-color: #02010A;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1em;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+.contenido{
+  margin: auto;
+  display: block;
+  width: 900px;
+}
+/* CABECERA */
+.cabecera{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 1% 2%;
+  width: 100%;
+  background-color: #5b7989;
+  animation-name: animacion1;
+  animation-duration: 1s;
+}
+header h1{
+  color: white;
+  text-align: left;
+  text-transform: capitalize;
+  height: 90%;
+  width: 50%;
+  display: inline;
+}
+header h1:not(selector){
+  color: white;
+  text-shadow: 2px 2px #02010A;
+}
+header nav{
+  height: 90%;
+  padding: 1% 2%;
+  float: right;
+  text-align: center;
+}
+.nav1 a{
+  text-decoration: underline;
+  list-style-type: none;
+  color: white;
+  border-bottom: 1px solid white;
+  background-color: #5b7989;
+}
+
+/* section contenedor2*/
+.contenedor1{
+ padding: 1% 2%;
+ width: 100%;
+ background: #d5c75f;
+ display: flex;
+ flex-direction: column;
+}
+.bloqueA{
+  display: flex;
+  flex-flow: row wrap;
+}
+.bloqueB{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contenedor1 .bloqueA {
+  width: 98%;
+  margin: 0 1%;
+}
+.contenedor1 .bloqueB {
+  width: 98%;
+  margin: 0 1%;
+}
+div [class*="bloque"]{
+  min-height: 100px;
+  flex: 1 2 33.3%;
+}
+.bloque1 {
+  order: 1;
+}
+.bloque2 {
+  order: 2;
+}
+.bloque3 {
+  order: 3;
+}
+.bloque4 {
+  order: 4;
+}
+.bloque5 {
+  order: 5;
+}
+.bloque6 {
+  order: 6;
+}
+
+.contenedor1 div img{
+  margin: 5% 5%;
+  border: 1px;
+  width: 90%;
+  box-shadow: 2px 2px #02010a;
+  transition: transform 1s;
+}
+/* EFECTOS DE IMAGENES */
+/* BLOQUE A */
+.bloqueA .bloque1{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+.bloqueA .bloque2{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.bloqueA .bloque3{
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+  }
+  /* BLOQUE B*/
+  .bloqueB .bloque4{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  .bloqueB .bloque6{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+/*AJUSTES FOOTER*/
+#piepagina {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 1% 2%;
+  width: 100%;
+  background-color: #C6d5c5;
+  display: flex;
+  flex-flow: row wrap;
+}
+#piepagina div{
+  margin: 0 auto 0 0;
+
+}
+#piepagina div h2{
+  margin-bottom: 0;
+}
+ #piepagina div p{
+   margin-top: 0;
+ }
+ /* CAJA CONTACTOS*/
+ #piepagina .CajaContacto ul li a{
+   color: black;
+   border-bottom: 1px solid black;
+ }
+ /* CAJA REDES SOCIALES */
+#piepagina .CajaSocial{
+  width: 153.89px;
+}
+ #piepagina .CajaSocial ul li a{
+   color: black;
+   text-decoration: none;
+ }
+ /* IMAGENES */
+ #piepagina .CajaSocial ul li a img{
+   border-radius: 3px;
+   width: 9%;
+ }
+
+#piepagina div ul{
+  float: left;
+  padding: 0 0;
+  margin: 0 auto;
+  text-align: left;
+  text-decoration: none;
+  list-style: none;
+}
+div[class*="Caja"]{
+  min-height: 150px;
+}
+
+/* MEDIA QUERIES PARA MODELO RESPONSIVE*/
+@media (max-width:899px) {
+  .contenido{
+    width: 100%;
+  }
+  .cabecera{
+    animation-name: animacion1;
+    animation-duration: 1s;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .cabecera h1{
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+  .cabecera nav {
+    margin: 0 auto !important;
+    width: 50% !important;
+    flex: none !important;
+    display: block !important;
+  }
+/* AJUSTES CONTENEDOR 1*/
+  .bloque1 {
+    width: 100% !important;
+    flex: none !important;
+  }
+  .bloque2 {
+    width: 100% !important;
+    flex: none !important;
+  }
+  .bloque3 {
+    width: 100% !important;
+    flex: none !important;
+  }
+  .bloque4 {
+    width: 100% !important;
+    flex: none !important;
+  }
+  .bloque5 {
+    width: 100% !important;
+    flex: none !important;
+  }
+  .bloque6 {
+    width: 100% !important;
+    flex: none !important;
+  }
+/* AJUSTES FOOTER */
+  div[class*="Caja"]{
+    text-align: center!important;
+    font-size: 1.5em!important;
+    width: 100% !important;
+    flex: none !important;
+    margin: 1%!important;
+  }
+  #piepagina .CajaContacto ul{
+    width: 100% !important;
+  }
+  #piepagina .CajaSocial ul li a img{
+    border-radius: 3px!important;
+    width: 5%!important;
+  }
+  #piepagina div ul li{
+    text-align: center!important;
+  }
+}
+
+@media (min-width:900px) {
+  .contenido{
+    width: 900px;
+  }
+}
+/* ANIMACION PARA EL HEADER*/
+@keyframes animacion1 {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
